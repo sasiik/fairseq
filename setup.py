@@ -35,7 +35,7 @@ with open("README.md") as f:
 if sys.platform == "darwin":
     extra_compile_args = ["-stdlib=libc++", "-O3"]
 else:
-    extra_compile_args = ["-std=c++11", "-O3"]
+    extra_compile_args = ["/std:c++11", "/O3"]
 
 
 class NumpyExtension(Extension):
